@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>2048</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Viga"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>2048</h1>
+      <div class="header">
+        <div class="btns">
+          <button id="startbtn">Click to Start</button>
+        </div>
+        <div class="scores">
+          <span id="score">Score: 0</span>
+          <span id="high-score">High Score: 0</span>
+        </div>
+      </div>
+        <p id="about">
+          <b>About Game:</b> 2048 is a kind of puzzle game which at first contains two tiles that display the number 2 or 4. With the help of the arrow keys one can move the tiles one step at a time. One can generate new tiles by moving or colliding two equal value tiles. When two tiles of the same value collide it generates a value that is twice the two colliding values. The goal of this game is to get 2048 before the whole box fills up with tiles.
+        </p>
+      <div id="canvas-block">
+        <span id="end">GameOver!!</span>
+        <span id="alert">Wow!! You have reached score 2048</span>
+        <button id="restartbtn">Restart</button>
+        <canvas id="canvas" width="500" height="500"></canvas>
+      </div>
+      
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
